@@ -423,8 +423,23 @@ HOME PAGE
 }
 .welcomeText{
 	width: 50%;
-	margin: 60px auto;
+	margin: 40px auto;
 	text-align:center;
+}
+.welcomeText h2{
+	padding-bottom:20px;
+}
+.welcomeText h3{
+	padding:12px 0;
+}
+.welcomeText p{
+	padding: 8px 0;
+}
+.covid{
+	text-decoration:underline;
+}
+.update{
+	text-align:left;
 }
 .productLinesHeadline{
 	text-align:center;
