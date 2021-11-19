@@ -468,7 +468,7 @@ footer{
 
 .upperFooter{
 	display: flex;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	justify-content:space-between;
 	color: white;
@@ -489,7 +489,8 @@ footer{
 }
 
 .officeHours p{
-	font-size:10px;
+	font-size:14px;
+	padding:2px 0;
 }
 .mapIcon{
 	max-height: 34px;
@@ -550,7 +551,7 @@ footer a{
 	align-self:center;
 	padding-left:14px;
 }
-footer a:hover{
+footer a:hover, .linkHover:hover{
 	background: -webkit-linear-gradient( left,#232FAE,#A51FBC);
   	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -702,6 +703,7 @@ HAIR PAGE
 	margin:0;
 	padding:10px;
 	flex:1;
+	align-self: center;
 }
 /******************************
 HANDS AND FEET PAGE
@@ -815,6 +817,9 @@ MAKE UP AND FACIALS PAGE
 .makeup1, .makeup2, makeup3, .massage1, .massage2, .massage3, .waxing1, .waxing2, .waxing3, .party1, .party2, .party3{
 	background-size:cover;
 	background-position:center;
+}
+.linkHover{
+	font-style:italic;
 }
 .makeup1{
 	background-image:url(images/facial.jpg);
@@ -948,6 +953,7 @@ CONTACT ABOUT PAGE
 }
 .staffTitle{
 	padding-left:20px;
+	width:100%;
 }
 .melImage{
 	align-self:center;
@@ -971,6 +977,7 @@ CONTACT ABOUT PAGE
 	flex-direction:column;
 	justify-content:center;
 	padding:20px;
+	width:100%;
 	
 }
 .staffBio img{
@@ -986,7 +993,7 @@ PARTIES & EVENTS PAGE
 	grid-row: 1 / 3;
 }
 .party2{
-	background-image:url(images/yoga-class.jpg);
+	background-image:url(images/spa-girls.jpeg) ;
 	grid-column:1 / 2;
 	grid-row: 3 / 4;
 }
