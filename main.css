@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: 'Noto Sans KR', sans-serif, 'helvetica', 'arial';
 	font-weight:300;
@@ -78,6 +81,10 @@ nav{
 .subPageNav .logo{
 	max-width: 190px;
 }
+#homeLogo{
+	max-width:240px;
+	padding:8px;
+}
 .subPageNav a{
 	width: 100%;
 	text-align:center;
@@ -102,7 +109,7 @@ MAIN NAV LINK EFFECTS
   height: 1px;
   top: 0;
   margin-top: -0.5px;
-  background: #333;
+  background:#CEBC8B;
 }
 
 .link:before {
@@ -110,12 +117,12 @@ MAIN NAV LINK EFFECTS
 }
 .link:after {
   right: 2.5px;
-  background: #333;
+  background: #CEBC8B;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .link:hover:before {
-  background: #333;
+  background: #CEBC8B;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -207,7 +214,7 @@ HAMBURGER MENU
   flex: none;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #CEBC8B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,8 +345,9 @@ HOME PAGE
 }
 
 .hairPic{
-	background-image: url(images/hair-image.png);
+	background-image: url(images/salon-wavy-hair.jpg);
 	background-size:cover;
+	background-position:center;
 }
 .cafeContainer{
 	grid-column: 5 / 7;
@@ -347,7 +355,7 @@ HOME PAGE
 	background-color:grey;
 }
 .cafePic{
-	background-image: url(images/cafe-image.png);
+	background-image: url(images/mani-pedi.jpeg);
 	background-size:cover;
 }
 .loungeContainer{
@@ -357,7 +365,7 @@ HOME PAGE
 }
 
 .loungePic{
-	background-image: url(images/lounge-image.png);
+	background-image: url(images/bridal-hairstyle.jpg);
 	background-size:cover;
 	
 }
@@ -367,7 +375,7 @@ HOME PAGE
 	background-color:floralwhite;
 }
 .spaPic{
-	background-image: url(images/spa-image.png);
+	background-image: url(images/spa-atmosphere.jpeg);
 	background-size:cover;
 	}
 
@@ -430,7 +438,7 @@ HOME PAGE
 	padding-bottom:20px;
 }
 .welcomeText h3{
-	padding:12px 0;
+	padding:40px 0 12px;
 }
 .welcomeText p{
 	padding: 8px 0;
@@ -532,11 +540,10 @@ footer a{
 	content: "";
     position: absolute;
     width: 36px;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
-	background: #fff;
-	opacity: 0.2;
+	background:#CEBC8B;
 }
 .footerMenu ul, .footerNews p, .phoneFooter{
 	margin-top: 20px;
@@ -552,7 +559,7 @@ footer a{
 	padding-left:14px;
 }
 footer a:hover, .linkHover:hover{
-	background: -webkit-linear-gradient( left,#232FAE,#A51FBC);
+	background: -webkit-linear-gradient( left,#7E5936,#F5CB86);
   	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -570,6 +577,52 @@ small{
 }
 .siteBy:hover{
 	font-size:12px;
+}
+
+/*************************
+PRICE PAGE
+**************************/
+.priceListLinks{
+	display:flex;
+	justify-content:space-around;
+	width:94%;
+	margin: 60px auto;
+	flex-wrap:wrap;
+}
+.priceContainer{
+	background-color:white;
+}
+.priceLink{
+	font-size:1.2em;
+	transition: all .5s ease;
+}
+.priceLink:hover{
+	color:#CEBC8B;
+}
+.priceHeadings{
+	color:#CEBC8B;
+	font-size:2.5em;
+	text-align:center;
+	margin-bottom:-40px;
+	font-weight:400;
+}
+.pricePageContainers{
+	padding: 40px 0;
+}
+.linkInPriceList{
+	color: white;
+	transition: all .5s ease;
+}
+.linkInPriceList:hover{
+	color:#CEBC8B;
+	letter-spacing:.1em;
+}
+.blackSeperator{
+	color:black;
+	font-weight:400;
+}
+.priceListLinksMobile{
+	display:none;
 }
 /*************************
 HAIR PAGE
@@ -595,6 +648,9 @@ HAIR PAGE
 	color: white;
 	padding: 40px 14px;
 	margin: 10px auto;
+}
+.longServiceList{
+	width: initial;
 }
 .serviceList h3{
 	font-family: 'Montserrat', sans-serif;
@@ -1094,71 +1150,7 @@ BOOK PAGE GIFT CERTIFICATES AND SUBSCRIBE
 	font-size:.9em;
 	text-align:center;
 }
-/******************************
-CAFE AND LOUNGE PAGE
-*******************************/
-.cafePageContainer{
-	width: 80%;
-	margin: 160px auto 40px;
-	display: flex;
-}
-.cafeContent{
-	flex:1;
-	width: 90%;
-	margin: 0 40px 0 auto;
-}
-.cafeTitle{
-	text-align:left;
-	padding: 0 0 40px;
-}
-.cafeImages{
-	flex:2;
-	display: grid;
-	grid-gap:20px;
-	grid-template-columns: repeat(6, 1fr); 
-	grid-template-rows: 1fr 2fr 1fr;
-}
-.cafe1, .cafe2, .cafe3, .cafe4, .cafe5, .cafe6, .cafe7{
-	background-size:cover;
-	background-position:center;
-}
-.cafe1{
-	background-image:url(images/cafe2.jpg);
-	grid-column:1 / 4;
-	grid-row: 1 / 2;
-}
-.cafe2{
-	background-image:url(images/cafe1.jpg);
-	grid-column:4 / 7;
-	grid-row: 1 / 2;
-}
-.cafe3{
-	background-image:url(images/cafe3.jpg);
-	grid-column:1 / 3;
-	grid-row: 2 / 3;
-}
-.cafe4{
-	background-image:url(images/cafe4.jpg);
-	grid-column:3 / 5;
-	grid-row: 2/ 3;
-}
-.cafe5{
-	background-image:url(images/cafe7.jpg);
-	grid-column:5 / 7;
-	grid-row: 2 / 3;
-}
-.cafe6{
-	background-image:url(images/cafe6.jpg);
-	grid-column:1 / 4;
-	grid-row: 3 / 4;
-}
-.cafe7{
-	background-image:url(images/cafe5.jpg);
-	grid-column:4 / 7;
-	grid-row: 3 / 4;
-}
-.cafeFood{
-	line-height: 36px;
+
 }
 .socialInfo{
 	font-weight: bold;
@@ -1249,7 +1241,7 @@ input[type=submit], input[type=button] {
 	}
 	
 input[type=submit]:hover, input[type=button]:hover{ 
-	background: linear-gradient(to right,#232FAE,#A51FBC);
+	background: linear-gradient(to right,#7E5936,#F5CB86);
 	color: #ffffff;  
 }
 
@@ -1309,7 +1301,7 @@ iframe{
 }
 .otherLinks{
 	font-weight:bold;
-	background: -webkit-linear-gradient( left,#390C88,#B122E1);
+	background: -webkit-linear-gradient( left,#7E5936,#F5CB86);
   	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1350,7 +1342,7 @@ EMAIL SIGN UP FORM
 	width: 100%;
 }
 #mc_embed_signup .button{
-	background-color:#1a1a1a;
+	background: -webkit-linear-gradient( left,#7E5936,#F5CB86);
 	font-size:12px;
 	border-radius: 0;
 	padding: 0;
@@ -1364,6 +1356,9 @@ EMAIL SIGN UP FORM
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+}
+#mc_embed_signup .button:hover{
+	letter-spacing:.2em;
 }
 
 /******************************
@@ -1404,6 +1399,11 @@ MEDIA QUERIES
 	}
 	.menu-wrap{
 		display:block;
+	}
+	.blackMobileLogo{
+		display: block;
+		max-width: 70%;
+		margin:100px auto 0;
 	}
 	.hairServices{
 		margin: 0 auto;
@@ -1556,6 +1556,26 @@ MEDIA QUERIES
 	.appointmentImage{
 		opacity:.2
 	}
+	.priceListLinks{
+		display:none;
+	}
+	.priceListLinksMobile{
+		display: flex;
+		width:96%;
+		margin: 40px auto;
+		justify-content: space-around;
+		flex-wrap:wrap;
+	}
+	.priceLink{
+		padding:10px 20px;
+		box-shadow:0 2px 5px 0 #A4ADBA;
+	}
+	.priceTitle{
+		padding-top:60px;
+	}
+	.priceHeadings{
+		margin-bottom:0;
+	}
 }
 @media(max-width:800px){
 	.bookPageOptions{
@@ -1566,14 +1586,6 @@ MEDIA QUERIES
 		margin: 12px auto;	
 		}
 	.homeGallery{
-		display:none;
-	}
-	.blackMobileLogo{
-		display: block;
-		max-width: 70%;
-		margin:100px auto 0;
-	}
-	.mobileLogo{
 		display:none;
 	}
 	.welcomeText{
@@ -1593,6 +1605,10 @@ MEDIA QUERIES
 	}
 	.thankYouText h3{
 		width: 80%;
+	}
+	.priceHeadings{
+		line-height:50px;
+		font-size:1.8em;
 	}
 }
 @media(max-width:750px){
@@ -1670,6 +1686,9 @@ MEDIA QUERIES
 		grid-column:4/7;
 		grid-row: 1 / 7;
 	}
+	.removeMobile{
+		display:none;
+	}
 }
 @media(max-width:600px){
 	.makeup2, .massage1, .waxing1{
@@ -1728,6 +1747,9 @@ MEDIA QUERIES
 	}
 	.manicureIntro, .feetIntro, .nailPrices1, .nailPrices2, .nailsInfo, .manicureIntro, .feetIntro{
 		padding: 0 10px;
+	}
+	.priceListLinksMobile p{
+		margin-top:34px;
 	}
 	
 	
