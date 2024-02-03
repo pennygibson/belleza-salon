@@ -83,7 +83,7 @@ nav{
 }
 #homeLogo{
 	max-width:240px;
-	padding:8px;
+	
 }
 .subPageNav a{
 	width: 100%;
@@ -324,8 +324,9 @@ HOME PAGE
 ********************************************/
 .homeGallery{
 	display:grid;
-	grid-template-columns: repeat(9, 1fr); 
+	grid-template-columns: repeat(11, 1fr); 
 	grid-template-rows: repeat(5, 18vh);
+	margin-top:130px;
 }
 .imageContainer{
 	overflow: hidden;
@@ -350,7 +351,7 @@ HOME PAGE
 	background-position:center;
 }
 .cafeContainer{
-	grid-column: 5 / 7;
+	grid-column: 5 / 8;
 	grid-row: 4 / 6;
 	background-color:grey;
 }
@@ -359,7 +360,7 @@ HOME PAGE
 	background-size:cover;
 }
 .loungeContainer{
-	grid-column: 7 / 10;
+	grid-column: 8 / 12;
 	grid-row: 1 / 6;
 	background-color:#1a1a1a;
 }
@@ -370,7 +371,7 @@ HOME PAGE
 	
 }
 .spaContainer{
-	grid-column: 5 / 7;
+	grid-column: 5 / 8;
 	grid-row: 1 / 4 ;
 	background-color:floralwhite;
 }
@@ -480,6 +481,7 @@ footer{
 	margin: 0 auto;
 	justify-content:space-between;
 	color: white;
+	align-items:center;
 }
 .locationSet{
 	text-align:center;
@@ -624,6 +626,15 @@ PRICE PAGE
 .priceListLinksMobile{
 	display:none;
 }
+.navLeft, .navRight{
+	width:40%;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+#centeredLogo{
+	max-width:140px;
+}
 /*************************
 HAIR PAGE
 **************************/
@@ -715,6 +726,7 @@ HAIR PAGE
 	background: transparent;
 	box-shadow:0 2px 5px 0 #A4ADBA;
 	transition:all 0.3s ease;
+	color:#1a1a1a;
 }
 
 .button button:hover{
@@ -725,7 +737,7 @@ HAIR PAGE
 	text-align:center;
 	font-weight:300;
 	font-size:2.5em;
-	padding-top:180px;
+	padding-top:220px;
 	font-family:'Montserrat', sans-serif;
 }
 .lashPic{
@@ -1402,8 +1414,8 @@ MEDIA QUERIES
 	}
 	.blackMobileLogo{
 		display: block;
-		max-width: 70%;
-		margin:100px auto 0;
+		max-width: 50%;
+		margin:90px auto 0;
 	}
 	.hairServices{
 		margin: 0 auto;
@@ -1415,7 +1427,7 @@ MEDIA QUERIES
 		display:none;
 	}
 	.browsTitle{
-		padding: 0px;
+		padding-top: 40px;
 		font-size: 1.6em;
 	}
 	.subpageMobileLogo{
@@ -1433,6 +1445,9 @@ MEDIA QUERIES
 	}
 	.cafeImages{
 		max-height:800px;
+	}
+	.homeGallery{
+		display:none;
 	}
 }
 @media(max-width:1060px){
@@ -1585,9 +1600,6 @@ MEDIA QUERIES
 	.bookPageContact{
 		margin: 12px auto;	
 		}
-	.homeGallery{
-		display:none;
-	}
 	.welcomeText{
 		margin: 30px auto;
 	}
@@ -1609,6 +1621,9 @@ MEDIA QUERIES
 	.priceHeadings{
 		line-height:50px;
 		font-size:1.8em;
+	}
+	.priceTitle{
+		padding-top:40px;
 	}
 }
 @media(max-width:750px){
@@ -1688,6 +1703,9 @@ MEDIA QUERIES
 	}
 	.removeMobile{
 		display:none;
+	}
+	.welcomeText h3{
+		padding: 0 0 12px;
 	}
 }
 @media(max-width:600px){
