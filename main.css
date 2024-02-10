@@ -635,6 +635,9 @@ PRICE PAGE
 #centeredLogo{
 	max-width:140px;
 }
+.hideLine{
+	color:black;
+}
 /*************************
 HAIR PAGE
 **************************/
@@ -661,7 +664,10 @@ HAIR PAGE
 	margin: 10px auto;
 }
 .longServiceList{
-	width: initial;
+	width: 30%;
+}
+.right{
+	text-align:right;
 }
 .serviceList h3{
 	font-family: 'Montserrat', sans-serif;
@@ -672,6 +678,10 @@ HAIR PAGE
 
 .serviceList p{
 	font-size:.9em;
+}
+.extraInstructions{
+	line-height:22px;
+	padding-top:14px;
 }
 .underline{
 	width: 100%;
