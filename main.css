@@ -638,6 +638,9 @@ PRICE PAGE
 .hideLine{
 	color:black;
 }
+.centerText{
+	text-align:center;
+}
 /*************************
 HAIR PAGE
 **************************/
@@ -1050,17 +1053,26 @@ CONTACT ABOUT PAGE
 .stylistName{
 	padding:20px 0;
 }
+.staffImage{
+	max-width:300px;
+	margin-left: 30px;
+	box-shadow:0 0 6px #A4ADBA;
+	margin-top:20px;
+}
 .staffBio{
 	display: flex;
-	flex-direction:column;
 	justify-content:center;
-	padding:20px;
+	padding:60px 0;
 	width:100%;
-	
+	}
+.columnBio{
+	display:flex; 
+	justify-content:center;
+	flex-direction:column;
+	padding:60px 0;
+	width:100%;
 }
-.staffBio img{
-	align-self:center;
-}
+
 
 /******************************
 PARTIES & EVENTS PAGE
@@ -1479,6 +1491,9 @@ MEDIA QUERIES
 	.staffBio{
 		padding:0;
 	}
+	.bioPadding{
+		padding-top:60px;
+	}
 	.faceContainer{
 		flex-direction:column;
 		margin: 0 auto;
@@ -1634,6 +1649,12 @@ MEDIA QUERIES
 	}
 	.priceTitle{
 		padding-top:40px;
+	}
+	.staffBio{
+		flex-wrap:wrap;
+	}
+	.staffImage{
+		max-width:80%;
 	}
 }
 @media(max-width:750px){
